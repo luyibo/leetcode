@@ -4,7 +4,18 @@ def majorityElement(self, nums):
         :type nums: List[int]
         :rtype: int
         """
-        temp = list(set(nums))
-        for i in temp:
-            if nums.count(i)>(len(nums)/2):
-                return i
+        count = 0
+        number = nums[0]
+        count1 = 0
+        for i in nums:
+            if number == i:
+                count +=1
+            else:
+                count -=1
+            if count == 0:
+                number,count = i,1
+        for i in nums:
+            if i == number:
+                count1 +=1
+        if count1>len(nums)/2:
+            return number
