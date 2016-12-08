@@ -16,4 +16,4 @@ class Solution(object):
             self.dfs(List, result, i + 1, path + [List[i]])
 
 s = Solution()
-print s.subsets([1,2,4])
+print s.subsets([1,2,2])
