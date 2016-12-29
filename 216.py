@@ -17,4 +17,4 @@ class Solution(object):
             if start>n:break
             self.combination(k-1,n-i,current+[i],i+1)
 s = Solution()
-print s.combinationSum3(3,7)
+print s.combinationSum3(3,8)

@@ -12,4 +12,4 @@ class Solution(object):
         return basic
 
 s = Solution()
-print s.getRow(1)
+print s.getRow(5)

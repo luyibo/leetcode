@@ -7,7 +7,6 @@ def containsNearbyDuplicate( nums, k):
         :rtype: bool
         """
 
-
         a = {}
         for i in range(len(nums)):
             if not nums[i] in a:
